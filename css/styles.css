@@ -35,6 +35,42 @@ img {
   display: block;
 }
 
+.container {
+  max-width: 1110px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.header-container {
+  display: flex;
+}
+
+.logo-text {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 0.93;
+  color: #173a56;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 26px 0;
+  margin-right: 237px;
+}
+
+.header-nav-list {
+  display: flex;
+  text-align: center;
+  gap: 30px;
+}
+
+.header-nav-link {
+  display: block;
+  padding: 26px 0;
+}
+
 .hero {
 }
 .hero-title {
