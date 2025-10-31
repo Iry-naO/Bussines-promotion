@@ -20,32 +20,35 @@
     <!-- HEADER  -->
     <header class="header">
       <div class="container header-container">
-        <a class="logo-container" href="./index.html">
-          <svg class="logo" width="40" height="36.36">
-            <use href="./images/icons.svg#icon-logo"></use>
-          </svg>
-          <p class="logo-text">Product</p>
-        </a>
-
         <nav class="header-nav">
+          <a class="logo-container" href="./index.html">
+            <svg class="logo" width="40" height="36.36">
+              <use href="./images/icons.svg#icon-logo"></use>
+            </svg>
+            <p class="logo-text">Product</p>
+          </a>
           <ul class="header-nav-list">
-            <li><a class="header-nav-link" href="./index.html"></a>Product</li>
             <li>
-              <a class="header-nav-link" href="./pricing.html"></a>Pricing
+              <a class="header-nav-link current" href="./index.html">Product</a>
             </li>
             <li>
-              <a class="header-nav-link" href="./customers.html"></a>Customers
+              <a class="header-nav-link" href="./pricing.html">Pricing</a>
             </li>
-            <li><a class="header-nav-link" href=""></a>Resources</li>
+            <li>
+              <a class="header-nav-link" href="./customers.html">Customers</a>
+            </li>
+            <li><a class="header-nav-link" href="">Resources</a></li>
           </ul>
         </nav>
 
-        <ul>
+        <ul class="header-btn-list">
           <li>
-            <button type="button">Sign In</button>
+            <button class="header-btn" type="button">Sign In</button>
           </li>
           <li>
-            <button type="button">Sign Up</button>
+            <button class="header-btn header-btn-signup" type="button">
+              Sign Up
+            </button>
           </li>
         </ul>
       </div>
@@ -54,205 +57,224 @@
     <!-- MAIN -->
     <main>
       <!-- HERO -->
-      <section class="hero">
-        <h1 class="hero-title">Work at the speed of thought</h1>
-        <p class="hero-text">
-          Tools, tutorials, design and innovation experts, all in one place! The
-          most intuitive way to imagine your next user experience.
-        </p>
-        <ul class="hero-list">
-          <li class="hero-item">
-            <button type="button" class="hero-start-btn">Get started</button>
-          </li>
-          <li class="hero-item">
-            <button type="button" class="hero-video-btn">
-              <img
-                src="./images/triangle.svg"
-                alt="triangle"
-                width="20"
-                height="18"
-              />Watch the Video
-            </button>
-          </li>
-        </ul>
-        <img src="./images/hero-img.svg" alt="hero" width="610" height="555" />
+      <section class="section hero-section">
+        <div class="container hero-container">
+          <div class="hero-content">
+            <h1 class="hero-title">Work at the speed of thought</h1>
+            <p class="hero-text">
+              Tools, tutorials, design and innovation experts, all in one place!
+              The most intuitive way to imagine your next user experience.
+            </p>
+            <ul class="hero-btn-list">
+              <li class="hero-btn-item">
+                <button type="button" class="hero-start-btn">
+                  Get started
+                </button>
+              </li>
+              <li class="hero-btn-item">
+                <button type="button" class="hero-btn hero-video-btn">
+                  <a class="hero-btn-link" href="#">
+                    <svg class="hero-btn-icon" width="20" height="18">
+                      <use href="./images/icons.svg#icon-triangle"></use>
+                    </svg>
+                    <span>Watch the Video</span>
+                  </a>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <svg class="hero-main-icon" width="610" height="555">
+            <use href="./images/icons.svg#icon-hero"></use>
+          </svg>
+        </div>
       </section>
 
       <!-- PRODUCTS -->
       <section class="products">
-        <h2 class="products-title">Product was Built Specifically for You</h2>
-        <ul class="prodacts-list">
-          <li class="products-item">
-            <img
-              src="./images/icon-1.svg"
-              alt="Product-1"
-              width="54"
-              height="62"
-            />
-            <h3 class="products-item-title">First click tests</h3>
-            <p class="products-item-text">
-              While most people enjoy casino gambling,
-            </p>
-          </li>
-          <li class="products-item">
-            <img
-              src="./images/icon-2.svg"
-              alt="Product-2"
-              width="54"
-              height="62"
-            />
-            <h3 class="products-item-title">Design surveys</h3>
-            <p class="products-item-text">
-              Sports betting, lottery and bingo playing for the fun
-            </p>
-          </li>
-          <li class="products-item">
-            <img
-              src="./images/icon-3.svg"
-              alt="Product-3"
-              width="54"
-              height="62"
-            />
-            <h3 class="products-item-title">Preference tests</h3>
-            <p class="products-item-text">
-              Myspace page defines the individual.
-            </p>
-          </li>
-          <li class="products-item">
-            <img
-              src="./images/icon-4.svg"
-              alt="Product-4"
-              width="54"
-              height="54"
-            />
-            <h3 class="products-item-title">Five second tests</h3>
-            <p class="products-item-text">
-              Personal choices and the overall personality of the person.
-            </p>
-          </li>
-        </ul>
-        <button type="button" class="products-btn">sign up now</button>
+        <div class="container">
+          <h2 class="products-title">Product was Built Specifically for You</h2>
+          <ul class="prodacts-list">
+            <li class="products-item">
+              <div class="products-icon-wrapper">
+                <svg class="products-icon" width="11" height="18">
+                  <use href="./images/icons.svg#icon-arrow"></use>
+                </svg>
+              </div>
+
+              <h3 class="products-item-title">First click tests</h3>
+              <p class="products-item-text">
+                While most people enjoy casino gambling.
+              </p>
+            </li>
+            <li class="products-item">
+              <div class="products-icon-wrapper">
+                <svg class="products-icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-wave"></use>
+                </svg>
+              </div>
+
+              <h3 class="products-item-title">Design surveys</h3>
+              <p class="products-item-text">
+                Sports betting, lottery and bingo playing for the fun.
+              </p>
+            </li>
+            <li class="products-item">
+              <div class="products-icon-wrapper">
+                <svg class="products-icon" width="16" height="18">
+                  <use href="./images/icons.svg#icon-heart"></use>
+                </svg>
+              </div>
+
+              <h3 class="products-item-title">Preference tests</h3>
+              <p class="products-item-text">
+                Myspace page defines the individual.
+              </p>
+            </li>
+            <li class="products-item">
+              <div class="products-icon-wrapper">
+                <svg class="products-icon" width="14" height="18">
+                  <use href="./images/icons.svg#icon-hourglass"></use>
+                </svg>
+              </div>
+
+              <h3 class="products-item-title">Five second tests</h3>
+              <p class="products-item-text">
+                Personal choices and the overall personality of the person.
+              </p>
+            </li>
+          </ul>
+          <button type="button" class="products-btn">sign up now</button>
+        </div>
       </section>
 
       <!-- BENEFITS -->
-      <section>
-        <h2>Benefits</h2>
-        <ul>
-          <!-- Management -->
-          <li>
-            <img
-              src="./images/benefit-1.jpg"
-              alt="Management"
-              width="540"
-              height="500"
-            />
-            <h3>Effortless Validation for Management</h3>
-            <p>
-              The Myspace page defines the individual, his or her
-              characteristics, traits, personal choices and the overall
-              personality of the person.
-            </p>
-            <ul>
-              <li>
-                <h4>Accessory makers</h4>
-                <p>
-                  While most people enjoy casino gambling, sports betting,
-                  lottery and bingo playing for the fun.
-                </p>
-              </li>
-              <li>
-                <h4>Alterationists</h4>
-                <p>
-                  If you are looking for a new way to promote your business that
-                  won't cost you more money.
-                </p>
-              </li>
-            </ul>
-          </li>
+      <section class="section">
+        <div class="container">
+          <h2 class="visually-hidden">Benefits</h2>
+          <ul class="benefit-list">
+            <!-- Management -->
+            <li class="benefit-item">
+              <svg width="540" height="500">
+                <use href="./images/icons.svg#icon-management"></use>
+              </svg>
+              <div>
+                <h3 class="benefit-item-title">
+                  Effortless Validation for
+                  <span class="benefit-title-bold">Management</span>
+                </h3>
 
-          <!-- Support -->
-          <li>
-            <img
-              src="./images/benefit-2.jpg"
-              alt="Support"
-              width="540"
-              height="500"
-            />
-            <h3>Easier decision making for Customer Support</h3>
-            <p>
-              The Myspace page defines the individual, his or her
-              characteristics, traits, personal choices and the overall
-              personality of the person.
-            </p>
-            <ul>
-              <li>
-                <img
-                  src="./images/benefit-icon-1.jpg"
-                  alt="icon"
-                  width="35"
-                  height="35"
-                />
-                <p>Never worry about overpaying for your energy again.</p>
-              </li>
-              <li>
-                <img
-                  src="./images/benefit-icon-2.jpg"
-                  alt="icon"
-                  width="35"
-                  height="35"
-                />
-                <p>
-                  We will only switch you to energy companies that we trust and
-                  will treat you right
+                <p class="benefit-item-text">
+                  The Myspace page defines the individual, his or her
+                  characteristics, traits, personal choices and the overall
+                  personality of the person.
                 </p>
-              </li>
-              <li>
-                <img
-                  src="./images/benefit-icon-3.jpg"
-                  alt="icon"
-                  width="35"
-                  height="35"
-                />
-                <p>
-                  We track the markets daily and know where the savings are.
-                </p>
-              </li>
-            </ul>
-          </li>
+                <ul class="benefit-info-list">
+                  <li>
+                    <h4 class="benefit-subtitle">Accessory makers</h4>
+                    <p class="benefit-item-text">
+                      While most people enjoy casino gambling, sports betting,
+                      lottery and bingo playing for the fun.
+                    </p>
+                  </li>
+                  <li>
+                    <h4 class="benefit-subtitle">Alterationists</h4>
+                    <p class="benefit-item-text">
+                      If you are looking for a new way to promote your business
+                      that won't cost you more money.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </li>
 
-          <!-- Collaboration -->
-          <li>
-            <img
-              src="./images/benefit-3.jpg"
-              alt="Colaboration"
-              width="540"
-              height="500"
-            />
-            <h3>Optimisation for Collaborative</h3>
-            <p>
-              Few would argue that, despite the advancements of feminism over
-              the past three decades, women still face a double standard when it
-              comes to their behavior.
-            </p>
-            <ul>
-              <li>
-                <h4>Accessory makers</h4>
-                <p>
-                  While most people enjoy casino gambling, sports betting,
-                  lottery and bingo playing for the fun.
+            <!-- Support -->
+            <li class="benefit-item benefit-item-row">
+              <svg width="540" height="500">
+                <use href="./images/icons.svg#icon-support"></use>
+              </svg>
+              <div>
+                <h3 class="benefit-item-title benefit-title-support">
+                  Easier decision making for
+                  <span class="benefit-title-bold">Customer Support</span>
+                </h3>
+                <p class="benefit-item-text benefit-text-support">
+                  The Myspace page defines the individual, his or her
+                  characteristics, traits, personal choices and the overall
+                  personality of the person.
                 </p>
-              </li>
-              <li>
-                <h4>Alterationists</h4>
-                <p>
-                  If you are looking for a new way to promote your business that
-                  won't cost you more money.
-                </p>
-              </li>
-            </ul>
-          </li>
-        </ul>
+                <ul class="benefit-info-list">
+                  <li class="benefit-support-item">
+                    <div class="icon-check-wrapper">
+                      <svg width="17" height="12">
+                        <use href="./images/icons.svg#icon-check"></use>
+                      </svg>
+                    </div>
+                    <p class="benefit-item-text benefit-support-description">
+                      Never worry about overpaying for your energy again.
+                    </p>
+                  </li>
+
+                  <li class="benefit-support-item">
+                    <div class="icon-check-wrapper">
+                      <svg width="17" height="12">
+                        <use href="./images/icons.svg#icon-check"></use>
+                      </svg>
+                    </div>
+                    <p class="benefit-item-text benefit-support-description">
+                      We will only switch you to energy companies that we trust
+                      and will treat you right
+                    </p>
+                  </li>
+
+                  <li class="benefit-support-item">
+                    <div class="icon-check-wrapper">
+                      <svg width="17" height="12">
+                        <use href="./images/icons.svg#icon-check"></use>
+                      </svg>
+                    </div>
+                    <p class="benefit-item-text benefit-support-description">
+                      We track the markets daily and know where the savings are.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- Collaboration -->
+            <li>
+              <svg width="540" height="500">
+                <use href="./images/icons.svg#icon-collaboration"></use>
+              </svg>
+              <h3>Optimisation for Collaborative</h3>
+              <p>
+                Few would argue that, despite the advancements of feminism over
+                the past three decades, women still face a double standard when
+                it comes to their behavior.
+              </p>
+              <ul>
+                <li>
+                  <h4>Accessory makers</h4>
+                  <p>
+                    While most people enjoy casino gambling, sports betting,
+                    lottery and bingo playing for the fun.
+                  </p>
+                </li>
+                <li>
+                  <h4>Alterationists</h4>
+                  <p>
+                    If you are looking for a new way to promote your business
+                    that won't cost you more money.
+                  </p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </section>
+
+      <!-- PRICES -->
+
       <section>
         <h2>Price Table</h2>
         <p>We offer competitive price</p>
@@ -293,6 +315,9 @@
         </ul>
       </section>
     </main>
+
+    <!-- FOOTER -->
+
     <footer>
       <div></div>
       <div></div>
