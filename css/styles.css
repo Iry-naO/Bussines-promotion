@@ -587,23 +587,6 @@ img {
   margin-bottom: 8px;
 }
 
-.prices-item:nth-child(2) .prices-heading,
-.prices-item:nth-child(2) .prices-subheading,
-.prices-item:nth-child(2) .prices-number,
-.prices-item:nth-child(2) .prices-sign,
-.prices-item:nth-child(2) .prices-description {
-  color: #fff;
-}
-
-.prices-item:nth-child(2) .prices-period {
-  color: #e0e0e0;
-}
-
-.prices-item:nth-child(2) .prices-btn {
-  color: #02897a;
-  background-color: #fff;
-}
-
 .prices-subheading {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -673,6 +656,62 @@ img {
   border: none;
   display: block;
   margin: 30px auto 0;
+}
+
+.prices-item:nth-child(2) .prices-heading,
+.prices-item:nth-child(2) .prices-subheading,
+.prices-item:nth-child(2) .prices-number,
+.prices-item:nth-child(2) .prices-sign,
+.prices-item:nth-child(2) .prices-description {
+  color: #fff;
+}
+
+.prices-item:nth-child(2) .prices-period {
+  color: #e0e0e0;
+}
+
+.prices-item:nth-child(2) .prices-btn {
+  color: #02897a;
+  background-color: #fff;
+}
+
+/* CLIENTS */
+
+.clients-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.78;
+  letter-spacing: 0.01em;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.clients-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+  text-align: center;
+  margin: 0 auto 40px;
+  text-align: center;
+  max-width: 537px;
+}
+
+.clients-list {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+
+.clients-item {
+  flex-basis: calc((100% - 128px) / 3);
+}
+
+.clients-icon-list {
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 /* FOOTER */
